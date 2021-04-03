@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import HomeHero from './HomeHero.js'
 
 export default function Home() {
   return (
-      <div class="bg-cover bg-center" style={{backgroundImage: 'url(images/background.png)'}}>
+      <div className="bg-cover bg-center" style={{backgroundImage: 'url(images/background.png)'}}>
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
         <title>Hi.</title>
@@ -12,12 +12,7 @@ export default function Home() {
 
 
       <main className="flex flex-col items-center justify-center flex-1 px-20 text-center">
-      <Image
-        src="/images/kevin-mask.png" // Route of the image file
-        height={310} // Desired size with correct aspect ratio
-        width={270} // Desired size with correct aspect ratio
-        alt="Your Name"
-      />
+        <HomeHero/>
       </main>
 
     </div>
