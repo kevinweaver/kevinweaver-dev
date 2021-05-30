@@ -45,7 +45,7 @@ export default function HomeHero() {
         }
       `}</style>
       <div className="bg-cover bg-center background">
-        <main className="flex flex-col items-center justify-center flex-1 px-20 text-center">
+        <main className="flex flex-col items-center justify-center flex-1 text-center">
           <div className="kevin">
             <Image
               src="/images/kevin-mask.png" // Route of the image file
