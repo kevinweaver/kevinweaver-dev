@@ -39,7 +39,7 @@ export default function HomeHero() {
         .kevin {
           //margin-top: 20vh;
           padding-top: 20vh;
-          padding-bottom: 20vh;
+          padding-bottom: 10vh;
         }
 
         .background {
