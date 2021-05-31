@@ -97,7 +97,6 @@ export default function HomeHero() {
         }
 
         .arrow {
-          position: absolute;
           bottom: 0;
           left: 50%;
           margin-left: -20px;
