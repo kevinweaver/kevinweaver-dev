@@ -1,0 +1,69 @@
+.kevin {
+  margin-top: 20vh;
+}
+
+.background {
+  background-image: url(images/background.png);
+  height: 50%;
+}
+
+.all-colors {
+  background: linear-gradient(
+    -60deg,
+    #64296d,
+    #d75949,
+    #dcaf4e,
+    #b7bb39,
+    #90be7d,
+    #126578,
+    #82a598,
+    #d2869a,
+    #64296d
+  );
+}
+.purp-red-yellow {
+  background: linear-gradient(-60deg, #64296d, #d75949, #dcaf4e);
+}
+
+.green-teal-blue {
+  background: linear-gradient(-60deg, #b7bb39, #90be7d, #126578);
+}
+
+.pink-red-yellow {
+  background: linear-gradient(-60deg, #d2869a, #f74a3b, #f9bb43);
+}
+
+.teal-indigo-pink {
+  background: linear-gradient(-60deg, #8ec07d, #82a598, #d1869a);
+}
+
+.purple-yellow-green {
+  background: linear-gradient(-60deg, #64296d, #f9bc42, #8fbf7f);
+}
+
+.gradient {
+  animation: flow 20s ease-in-out infinite;
+  background-size: 800%;
+  filter: drop-shadow(0 0 2rem #323232);
+  //-webkit-text-stroke: 0.5px white;
+
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @keyframes flow {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+
+.gradient:after {
+  filter: drop-shadow(0 0 2rem #323232);
+}
