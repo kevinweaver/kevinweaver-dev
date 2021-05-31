@@ -43,8 +43,16 @@ export default function HomeHero() {
         }
 
         .background {
-          background-image: url(images/background.png);
-          height: 50%;
+          background: url(images/background.png) no-repeat center center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          height: 80vh;
+          width: 100%;
+          position: absolute;
+          overflow: hidden;
+          z-index: -1;
         }
 
         .all-colors {
@@ -107,7 +115,8 @@ export default function HomeHero() {
           filter: drop-shadow(0 0 2rem #323232);
         }
       `}</style>
-      <div className="bg-center md:mg-top background">
+      <div className="background"></div>
+      <main className="flex flex-col items-center justify-center flex-1 text-center">
         <div className="kevin">
           <Image
             src="/images/kevin-mask.png" // Route of the image file
@@ -117,8 +126,6 @@ export default function HomeHero() {
             style="m-4"
           />
         </div>
-      </div>
-      <main className="flex flex-col items-center justify-center flex-1 text-center">
         <div className="max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0">
           <h1 className="cta box-border">
             <span className="">Hi. I like to</span>
