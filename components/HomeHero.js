@@ -68,6 +68,18 @@ export default function HomeHero() {
             #d2869a,
             #64296d
           );
+          -webkit-mask-image: linear-gradient(
+            -60deg,
+            #64296d,
+            #d75949,
+            #b7bb39,
+            #90be7d,
+            #dcaf4e,
+            #126578,
+            #82a598,
+            #d2869a,
+            #64296d
+          );
         }
 
         .gradient {
