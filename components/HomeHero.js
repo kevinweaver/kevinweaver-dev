@@ -59,27 +59,16 @@ export default function HomeHero() {
           background: linear-gradient(
             -60deg,
             #64296d,
+            #d2869a,
             #d75949,
+            #dcaf4e,
             #b7bb39,
             #90be7d,
-            #dcaf4e,
-            #126578,
             #82a598,
-            #d2869a,
+            #126578,
             #64296d
           );
-          -webkit-mask-image: linear-gradient(
-            -60deg,
-            #64296d,
-            #d75949,
-            #b7bb39,
-            #90be7d,
-            #dcaf4e,
-            #126578,
-            #82a598,
-            #d2869a,
-            #64296d
-          );
+          color: white;
         }
 
         .gradient {
@@ -93,13 +82,13 @@ export default function HomeHero() {
           -webkit-text-fill-color: transparent;
           @keyframes flow {
             0% {
-              background-position: 0 50%;
-            }
-            50% {
               background-position: 100% 50%;
             }
-            100% {
+            50% {
               background-position: 0% 50%;
+            }
+            100% {
+              background-position: 100% 50%;
             }
           }
         }

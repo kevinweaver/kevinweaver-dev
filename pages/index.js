@@ -1,6 +1,6 @@
 import Head from "next/head";
 import HomeHero from "../components/HomeHero.js";
-import Timeline from "../components/Timeline.js";
+import WriteCode from "../components/WriteCode.js";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
 
       <HomeHero />
-      {/* <Timeline /> */}
+      {/* <WriteCode /> */}
     </>
   );
 }
