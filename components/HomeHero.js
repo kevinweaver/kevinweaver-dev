@@ -100,7 +100,7 @@ export default function HomeHero() {
           position: absolute;
           bottom: 0;
           left: 50%;
-          margin-left: -40px;
+          margin-left: -20px;
           bottom: 20px;
           width: 40px;
           height: 40px;
