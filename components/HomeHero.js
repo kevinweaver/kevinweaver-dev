@@ -55,20 +55,38 @@ export default function HomeHero() {
           z-index: -1;
         }
 
-        .all-colors {
-          background: linear-gradient(
-            -60deg,
-            #64296d,
-            #d2869a,
-            #d75949,
-            #dcaf4e,
-            #b7bb39,
-            #90be7d,
-            #82a598,
-            #126578,
-            #64296d
-          );
-          color: white;
+        @supports ((background-clip: text) or (-webkit-background-clip: text))
+          and
+          (
+            (text-fill-color: transparent) or
+              (-webkit-text-fill-color: transparent)
+          ) {
+          .all-colors {
+            background: linear-gradient(
+              -60deg,
+              #64296d,
+              #d2869a,
+              #d75949,
+              #dcaf4e,
+              #b7bb39,
+              #90be7d,
+              #82a598,
+              #126578,
+              #64296d
+            );
+            background: -webkit-linear-gradient(
+              -60deg,
+              #64296d,
+              #d2869a,
+              #d75949,
+              #dcaf4e,
+              #b7bb39,
+              #90be7d,
+              #82a598,
+              #126578,
+              #64296d
+            );
+          }
         }
 
         .gradient {
@@ -77,9 +95,11 @@ export default function HomeHero() {
           filter: drop-shadow(0 0 2rem #323232);
 
           background-clip: text;
-          text-fill-color: transparent;
           -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+
+          text-fill-color: transparent;
+          //-webkit-text-fill-color: transparent;
+
           @keyframes flow {
             0% {
               background-position: 100% 50%;
@@ -140,7 +160,7 @@ export default function HomeHero() {
             <div className="block md gradient all-colors">{rotatingText()}</div>
           </h1>
         </div>
-        <div className="arrow bounce"></div>
+        {/* <div className="arrow bounce"></div> */}
       </main>
     </>
   );
